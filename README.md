@@ -1,6 +1,7 @@
 # Todoapi
 
-This repository contains source code for a todo REST api backend written in Golang.
+This repository contains source code for a todo REST api backend written in 
+Golang's standard library using [gorm](https://gorm.io/) and [sqlite](https://www.sqlite.org/) database.
 
 ## Endpoints
 
