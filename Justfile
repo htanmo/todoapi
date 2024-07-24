@@ -4,12 +4,12 @@
 
 # Run Web Server
 @run: build
-    ./bin/server
+    bin/todoapi
 
 # Build Web Server
 @build:
-    go build -o ./bin/server ./cmd/app/main.go
+    go build -o bin/
 
 # Clean the project
 @clean:
-    rm -f ./bin/server
+    rm -rf bin/
