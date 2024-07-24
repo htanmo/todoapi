@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/htanmo/todoapi/internal/api/v1/models"
+	"github.com/htanmo/todoapi/models"
 )
 
 func GetAllTodos(w http.ResponseWriter, r *http.Request) {

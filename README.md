@@ -1,15 +1,17 @@
 # Todoapi
 
-This repository contains source code for a todo REST api backend written in 
-Golang's standard library using [gorm](https://gorm.io/) and [sqlite](https://www.sqlite.org/) database.
+A simple REST API for todo applications.
 
 ## Endpoints
 
 ### Base URL
 
 ```txt
-http://localhost:8080/api/{api_version}
+http://localhost:8080/api
 ```
+
+By default the `todoapi` uses port 8080 you can set a different port using
+`PORT` Environment variable. 
 
 ### API Endpoints
 
@@ -23,7 +25,8 @@ http://localhost:8080/api/{api_version}
 
 ## Building the Project
 
-Default path to store the database is `./todo.db` you can set a custom database name and path to store the database using the `DB_URI` environment variable.
+Default path to store the database is `todo.db` you can set a custom database
+name and path to store the database using the `DB_URI` environment variable.
 
 ### Justfile (Recommended)
 
@@ -38,11 +41,11 @@ just run
 #### Build Server
 
 ```sh
-go build -o ./bin/server ./cmd/app/
+go build -o bin/
 ```
 
 #### Run Server
 
 ```sh
-./bin/server
+./bin/todoapi
 ```
